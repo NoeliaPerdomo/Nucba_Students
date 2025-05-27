@@ -44,7 +44,7 @@ password.addEventListener("input", (e) => {
         feedbackPassword.innerHTML = "La contraseña debe tener al menos 8 caracteres";
         return;
     }
-    let expresion = /(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])/;
+    let expresion = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/;
     if (!expresion.test(valor)) {
         feedbackPassword.innerHTML = "La contraseña no es válida";
         return;
@@ -76,7 +76,7 @@ loginForm.addEventListener("submit", (e) => {
     } 
 
     let valorPassword = password.value.trim();
-    let expresionPassword = /(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])/;
+    let expresionPassword = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/;
     if (valorPassword.length < 8) {
         feedbackPassword.innerHTML = "La contraseña debe tener al menos 8 caracteres";
         errores = true;
