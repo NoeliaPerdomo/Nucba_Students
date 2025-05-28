@@ -1,0 +1,48 @@
+@import url("./base.css");
+
+#welcome h1{
+    color: rgb(215, 3, 247);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#welcome p{
+    background-image: linear-gradient(to right, violet, cyan);
+    background-clip: text;
+        color: transparent;
+        font-size: 1.6rem;
+        font-weight: 600;
+}
+
+#logout{
+    padding-top: 1rem;
+    & button{
+        padding: 0.55rem .85rem;
+        border-radius: 1.25rem;
+        background-image: linear-gradient(to left, violet, cyan);
+        color: snow;
+        }
+}
+
+#welcome picture img {
+    width: 50%;
+    height: auto;
+}
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#welcome picture img {
+    width: 70%; /* Increased from 60% to 70% */
+    height: auto;
+}

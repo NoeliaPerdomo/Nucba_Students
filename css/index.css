@@ -1,0 +1,56 @@
+@import url("./base.css");
+
+#index{
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+    justify-content: space-between;
+    & article{
+        flex: 1;
+        color: snow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        & h1{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        & nav{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            & a{
+                padding: .55rem .85rem;
+                border-radius: 1rem;
+                text-decoration: none;
+                font-size: 1.25rem;
+                &:first-child{
+                    background-image: linear-gradient(to left, violet, cyan);
+                    background-clip: text;
+                    color: transparent;
+                    transform: scale(.9);
+                    transition: all 240ms ease-in out;
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+                &:last-child{
+                    background-image: linear-gradient(to left, violet, cyan);
+                    color: snow;
+                    transform: scale(.9);
+                    transition: all 240ms ease-in-out;
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    & picture{
+        width: 50%;
+       }
+}

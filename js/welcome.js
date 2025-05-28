@@ -3,7 +3,8 @@ if (!localStorage.getItem("usuario")) {
 }
 
 
-var users = JASON.parse(localStorage.getItem("usuarios"));
+var user = JSON.parse(localStorage.getItem("usuario"));
+
 const username = document.querySelector("#username");
 username.innerHTML = user.username.toUpperCase();
 
